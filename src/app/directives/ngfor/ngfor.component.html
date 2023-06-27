@@ -1,0 +1,24 @@
+<p>ngfor component!</p>
+
+<div *ngFor="let name of names">{{name}}</div>
+<h3>Kllanıcı</h3>
+<div *ngFor="let user of userList">{{user.name}} - {{user.email}}</div>
+
+<h3>Kllanıcı (Table)</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </tbody>
+</table>

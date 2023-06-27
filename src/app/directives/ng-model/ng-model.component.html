@@ -1,0 +1,9 @@
+<p>ng-model works!</p>
+
+<input [ngModel]="name" type="text" value="{{name}}" (ngModelChange)="name=$event">
+<!--Önce ngModel'e name alanını bağladık. Sonra bu model her değiştiğinde ngModelChange çalışacak ve name değişkenine textbox'taki değer tayacak-->
+<p>{{name}}</p>
+
+<!--KISA YOLU-->
+<input [(ngModel)]="name" type="text">
+<p>{{name}}</p>
